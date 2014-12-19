@@ -2,7 +2,7 @@
 
 . .bashrc
 
-export PATH="$PATH:/PATH/TO/jr-config/bin"
+export PATH="$PATH:users/andrew/desktop/JanrainGithub/jr-config/bin"
 
 git_subdir() {
     BASE=$(git rev-parse --show-toplevel 2>/dev/null)
