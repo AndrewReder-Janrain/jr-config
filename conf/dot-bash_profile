@@ -1,8 +1,10 @@
 #!/bin/bash
 
-. .bashrc
-
-export PATH="$PATH:users/andrew/desktop/JanrainGithub/jr-config/bin"
+export PATH="/usr/local/bin:$PATH:/Users/andrew/Desktop/JanrainGithub/jr-config/bin"
+export PATH="$HOME/.composer/vendor/bin:$PATH"
+export PYTHONPATH=/Users/andrew/Desktop/JanrainRepos/janrain-python-api:$PYTHONPATH
+export JANRAIN_PARAMIKO_FALLBACK='yay'
+alias ssh="ssh -l areder"
 
 git_subdir() {
     BASE=$(git rev-parse --show-toplevel 2>/dev/null)
@@ -43,7 +45,12 @@ jobs_sum() {
 }
 
 alias j=jobs
-
+alias ccd="cd /Users/andrew/Desktop/JanrainRepos/CaptureCustomerDev"
+alias cris="cd /Users/andrew/Desktop/CRISDev/meanCris"
+alias avidphp="cd /Users/andrew/Desktop/Sites/AvidrederPHP"
+alias avidng="cd /Users/andrew/Desktop/Sites/angular-avidreder"
+alias deldash="cd /Users/andrew/Desktop/JanrainRepos/DelDash/delivery-dashboard"
+alias ded="open -a 'Sublime Text 2'"
 . /Library/Developer/CommandLineTools/usr/share/git-core/git-completion.bash
 . /Library/Developer/CommandLineTools/usr/share/git-core/git-prompt.sh
 
